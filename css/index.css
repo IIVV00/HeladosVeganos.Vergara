@@ -1,0 +1,232 @@
+*{margin: 0; padding: 0;}
+
+@import url(//db.onlinewebfonts.com/c/d8f6a5c5ef861c565ffd82f66ae25788?family=Calendas+Regular);
+@import url(//db.onlinewebfonts.com/c/bd4e32106fed452eff52820557176372?family=Calendas+Bold);
+
+body {font-family: "calendas regular", serif;}
+
+/* Página index */
+
+/*header*/
+
+header {
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+/*LOGO*/
+.logo-menu {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.img {
+    width: 170px;
+    padding-left: 20px;
+}
+/*MENU*/
+.menu ul {
+    line-height: 3em;
+    margin: 0;
+    padding: 0;
+}
+.menu ul ul {
+    display:none;
+    position: relative;
+}
+.menu ul li:hover ul {
+    position:absolute;
+    display: block;
+    margin: 0px 0px 0px -54px;
+    text-align: right;
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color:#460d16;  
+    padding: auto;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+}
+a:hover {
+    background: whitesmoke;
+    transform: scale(1.2,1.2);
+}
+
+button {
+    background: transparent;
+    border: none;
+    margin: 25px;    
+}
+button:hover {
+    display: list-item;
+}
+
+/*main*/
+
+/*section 1*/
+
+.section1 {
+    background-image: url(../imagenes/seccion1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 7em;
+    animation-name: section1;
+    animation-duration: 2.1s;
+    animation-iteration-count: initial;
+}
+.section1 h1 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: right;
+    color: #91a863; 
+    padding: 2.2em 100px 0 0;
+    line-height: 1.4em; 
+}
+h2 {
+    font-weight:bold;
+    color: #dba643; 
+}
+.section1 h2 {
+    font-size: 2.6em;
+    text-align: right;
+    padding: 1.6em 100px 0 0;
+    line-height: 1.4em;
+} 
+.section1 h3 {
+    font-size: 1.2em;
+    text-align: right;
+    color: black; 
+    padding: 0.6em 100px 0 0em;
+    line-height: 1.4em; 
+}
+
+@keyframes section1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*section 2*/
+
+.section2 {
+    background-image: url(../imagenes/seccion2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.section2 h2 {
+    font-size: 2em;
+    text-align: left;
+    padding: 2.4em 0 0 5em;
+}
+.section2 h3 {
+    font-weight: bold;
+    font-size: 3em;
+    color: #ffffff; 
+    padding: 40px 0em 0 3.2em;
+    line-height: 1.4em;
+    text-align: left;
+}
+p {
+    font-size: 1.2em;
+    text-align: left;
+    color: #dba643;  
+    padding: 2em 0 0 8.3em;
+    line-height: 1.4em; 
+}
+
+/*Footer*/
+
+footer {
+    padding: 15px 36px;
+    background-image: linear-gradient(to top, rgba(245, 245, 245, 0.815), white);
+}
+.LogoFooter {
+    width: 120px;
+}
+hr {
+    color: #460d16;
+}
+.RedesSociales h2 {
+    font-size: 1.6em;
+    text-align: left;
+    padding: 0 0px 0 2px;
+    line-height: 1.6em;
+}
+.RedesSociales ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.RedesSociales ul .fab {
+    font-size: 40px;
+    margin-inline: 14px;
+}
+.RedesSociales ul a:hover {
+    background-color: #c6a058;
+    border-radius: 14px;
+}
+
+/* Página Helados */
+
+/*section 1*/
+
+#helados {
+    background-image: url(../imagenes/seccion2-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 7em;
+}
+.título-h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+    color:#3d0810; 
+}
+.Tabla-helados ul{
+    color: black; 
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+.sabores {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+/* Página Contactos */
+
+/*section 1*/
+
+.contacto {
+    background-image: url(../imagenes/seccion2-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 82vh;
+    margin-top: 7em;
+}
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 30em;
+}
+.contacto .Limpiar-formulario {
+    margin-bottom: 12px;
+}
