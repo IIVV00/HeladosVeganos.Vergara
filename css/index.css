@@ -218,15 +218,12 @@ hr {
     background-image: url(../imagenes/seccion2-01.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 82vh;
+    height: 92vh;
     margin-top: 7em;
 }
-.contacto form {
+.contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1em 30em;
-}
-.contacto .Limpiar-formulario {
-    margin-bottom: 12px;
 }

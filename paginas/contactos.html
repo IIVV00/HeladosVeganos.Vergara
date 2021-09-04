@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contactos</title>
     <script src="https://kit.fontawesome.com/cc16a2dc84.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../bootstrap-5.1.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
@@ -34,7 +35,31 @@
     </header>
 
 <!--SECCIONES-->
+    <form class="contacto">
+        <fieldset>
+        <legend><h1 class="título-h1">CONTACTANOS</h1></legend>
+        <div class="container">
+            <div class="mb-3 row">
+                <label for="disabledTextInput" class="form-label">Nombre y apellido</label>
+                <input type="text" name="disabledTextInput" class="form-control"><br>
+            </div>
+            <div class="mb-3 row">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control"/><br> 
+            </div>
+            <div class="mb-3 row">
+                <textarea rows="10" cols="40" class="form-control">Deje aquí su mensaje...</textarea><br>
+            </div>
 
+            <div class="mb-3 row input">
+                <input type="reset" class="form-control" value="Limpiar formulario"/>
+                <input type="submit"class="form-control"  value="Enviar formulario"/>
+            </div>
+        </div>
+        </fieldset>
+    </form>
+
+<!--
     <section class="contacto">
         <h1 class="título-h1">CONTACTANOS</h1>
         <form action="" method="POST" enctype="text/plain">
@@ -50,6 +75,7 @@
                 <input type="submit" value="Enviar formulario"/>
         </form>
     </section>
+-->
 
 <!--PIE DE PÁGINA-->
 
@@ -65,5 +91,6 @@
         </div>
     </footer>
 
+    <link rel="stylesheet" href="../bootstrap-5.1.0-dist/js/bootstrap.js">
 </body>
 </html>
